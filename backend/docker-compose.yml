@@ -16,11 +16,10 @@ services:
       # To your desired database path
       - ~/.MariaDBData/mariadb/api_container:/var/lib/mysql
     ports:
-      - 3306:3306
+      - :3307:3307
       # - 27018:3306
     environment:
       MYSQL_ROOT_PASSWORD: root # root password
-      MYSQL_DATABASE: api_database # database
-      # MYSQL_USER: root # database user
+      MYSQL_DATABASE: MariaDB # database
+      MYSQL_USER: root # database user
       MYSQL_PASSWORD: root # database user password
-
