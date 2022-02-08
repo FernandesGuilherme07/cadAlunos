@@ -1,31 +1,29 @@
-/* eslint-disable no-undef */
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    jest: true,
+    es6: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+  plugins: ['react', 'prettier', 'react-hooks'],
   rules: {
-    'react/react-in-jsx-scope': 'off',
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': 0,
+    'import/prefer-default-export': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'no-console': 0,
+    'func-names': 0,
   },
 };
