@@ -20,6 +20,6 @@ Este projeto consiste em um WebAPP escolar, aonde a escola ao logar-se poderá: 
 - [SQL](https://blog.betrybe.com/sql/)
 - [docker](https://www.docker.com/)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
-- [Sucraze](https://www.npmjs.com/package/sucrase)
+- [Sucrase](https://www.npmjs.com/package/sucrase)
 - [Sequelize](https://sequelize.org/)
 
